@@ -12,6 +12,6 @@ regr = linear_model.LinearRegression()
 regr.fit(train_data, test_data)
 revenue_pred=regr.predict(train_data)
 
-print("Variance score: %.2f" % r2_score(test_data,revenue_pred))      # varience
-print("Mean squared error: %.2f" % mean_squared_error(test_data,revenue_pred))  #squaring errors for removing negative values
+print("Variance score: %.2f" % r2_score(test_data,revenue_pred))
+print("Mean squared error: %.2f" % mean_squared_error(test_data,revenue_pred))
 
